@@ -1,0 +1,222 @@
+meta(charset='UTF-8')
+meta(name='viewport', content='width=device-width,initial-scale=1')
+// =============== FAVICON ===============
+link(rel='shortcut icon', href='assets/img/favicon.png', type='image/x-icon')
+// =============== REMIX ICONS ===============
+link(href='https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css', rel='stylesheet')
+// =============== CSS ===============
+link(rel='stylesheet', href='assets/css/home.css')
+title Recycle! Reuse!
+// ==================== HEADER ====================
+header.header#header
+  nav.nav.container
+    a.nav__logo(href='#')
+      i.ri-recycle-line.nav__logo-icon
+      |  Recycle!
+    .nav__menu#nav-menu
+      ul.nav__list
+        li.nav__item
+          a.nav__link.active-link(href='#home') Home
+        li.nav__item
+          a.nav__link(href='#') Recycle Search
+        li.nav__item
+          a.nav__link(href='#') Drop Off
+        li.nav__item
+          a.nav__link(href='#contact') Contact Us
+        li.nav__item
+          a.nav__link(href="/logout") Log out
+      .nav__close#nav-close
+        i.ri-close-line
+    .nav__btns
+      //  Theme change button 
+      .nav__toggle#nav-toggle
+        i.ri-menu-line
+main.main
+  // ==================== HOME ====================
+  section.home#home
+    .home__container.container.grid
+      img.home__img(src='assets/img/recycle.jpg', alt)
+      .home__data
+        h1.home__title.
+          Let's Save Planet Earth
+        .welcome-box
+            h1 #{message}
+        br
+        p.home__description.
+          
+          We can no longer afford to be a “throw-away” society. Each of us adds to the problem and each of us can contribute to the solution.
+          
+  // ==================== STEPS ====================
+  section.steps.section.container
+    .steps__bg
+      h2.section__title-center.steps__title.
+        
+        Be part of the solution
+        
+      .steps__container.grid
+        .steps__card
+          .steps__card-number 01
+          h3.steps__card-title Reduce
+          p.steps__card-description
+            i.ri-checkbox-fill.about__details-icon.
+            | buy only what you need.
+
+          p.steps__card-description
+            i.ri-checkbox-fill.about__details-icon.
+            |Iook for recycle symbol or the words “made from recycled materials” when shopping.
+
+        .steps__card
+          .steps__card-number 02
+          h3.steps__card-title Repair
+          p.steps__card-description
+            i.ri-checkbox-fill.about__details-icon.
+            |repair broken items instead of replacing them.
+
+          p.steps__card-description
+            i.ri-checkbox-fill.about__details-icon.
+            |repair broken items instead of replacing them.
+
+        .steps__card
+          .steps__card-number 03
+          h3.steps__card-title Recycle
+          p.steps__card-description
+            i.ri-checkbox-fill.about__details-icon.
+            |identify the recycling centers in your community.
+
+          p.steps__card-description
+            i.ri-checkbox-fill.about__details-icon.
+            |trade in old appliances when possible
+
+  // ==================== PRODUCTS ====================
+  section.product.section.container#products
+    h2.section__title-center.
+      
+      Check out Recycled products
+      
+    .product__container
+      img.product__img(src='/img/kraftbag.jpg', alt)
+  // ==================== QUESTIONS ====================
+  section.questions.section#faqs
+    h2.section__title-center.questions__title.container.
+      
+      Some common questions
+      
+    .questions__container.container.grid
+      .questions__group
+        .questions__item
+          header.questions__header
+            i.ri-add-line.questions__icon
+            h3.questions__item-title.
+              
+              Can I recycle Tetrapaks & cartons?
+              
+          .questions__content
+            p.questions__description.
+              
+              These food and drink containers are items that contain a mixture of cardboard, foil, and plastic. As a result they are hard to recycle, because only the cardboard can be recycled and the other components have to be incinerated.
+              
+        .questions__item
+          header.questions__header
+            i.ri-add-line.questions__icon
+            h3.questions__item-title.
+              
+              Are glass jar and bottle lids metal or plastic? Can I recycle them?
+              
+          .questions__content
+            p.questions__description.
+              
+              Most glass jars and bottles are sealed with a metal lid that has a plastic lining. These are recycled as metals rather than plastics, because the plastic component is burned off during the recycling process to leave the metal, which can then be remanufactured.
+              
+        .questions__item
+          header.questions__header
+            i.ri-add-line.questions__icon
+            h3.questions__item-title.
+              
+              How does recycling save energy?
+              
+          .questions__content
+            p.questions__description.
+              
+              When we make new products out of virgin materials, we expend energy to extract and process those materials. This includes burning fossil fuels. However, if we manufacture products using recycled materials, we reduce the need for virgin materials and save the energy required to extract and process them.
+              
+      .questions__group
+        .questions__item
+          header.questions__header
+            i.ri-add-line.questions__icon
+            h3.questions__item-title.
+              
+              Do recyclables need to be totally clean?
+              
+          .questions__content
+            p.questions__description.
+              
+              Not totally! A quick rinse should be enough to get rid of anything that might mess with the recycling equipment. Just be sure large chunks are gone, and that the item is mostly clean. Rinsing recyclable food containers will also help make sure your recycling bin doesn't smell or get any unwelcome bugs.
+              
+        .questions__item
+          header.questions__header
+            i.ri-add-line.questions__icon
+            h3.questions__item-title.
+              
+              Why are some items that look recyclable not accepted at my recycling facility?
+              
+          .questions__content
+            p.questions__description.
+              
+              Your local recycling facility might not accept all recyclable items. This is especially true with plastics. While plastic bottles are the most commonly recycled plastic products, other plastics may or may not be accepted in your area, so first check what your local recycling provider accepts.
+              
+        .questions__item
+          header.questions__header
+            i.ri-add-line.questions__icon
+            h3.questions__item-title.
+              
+              How can I find a Recycling Facility near me?
+              
+          .questions__content
+            p.questions__description.
+              
+              click on the Drop off tab on the website to find a location near you.
+              
+  // ==================== CONTACT ====================
+  section.contact.section.container#contact
+    .contact__container.grid
+      .contact__box
+        h2.section__title.
+          
+          Reach out to us today
+          
+        .contact__data
+          .contact__information
+            h3.contact__subtitle Call us for instant support
+            span.contact__description
+              i.ri-phone-line.contact__icon
+              |+254748490307
+
+          .contact__information
+            h3.contact__subtitle Write us by mail
+            span.contact__description
+              i.ri-mail-line.contact__icon
+              |user@email.com
+
+      form.contact__form(action)
+        .contact__inputs
+          .contact__content
+            input.contact__input(type='email', placeholder=' ')
+            label.contact__label(for) Email
+          .contact__content
+            input.contact__input(type='text', placeholder=' ')
+            label.contact__label(for) Subject
+          .contact__content.contact__area
+            textarea.contact__input(name='message', placeholder=' ')
+            label.contact__label(for) Message
+        button.button.button--flex.
+          
+          Send Message
+          
+    p.footer__copy ©All rigths reserved
+// =============== SCROLL UP ===============
+a.scrollup#scroll-up(href='#')
+  i.ri-arrow-up-fill.scrollup__icon
+// =============== SCROLL REVEAL ===============
+script(src='/assets/js/scrollreveal.min.js')
+// =============== MAIN JS ===============
+script(src='/assets/js/main.js')
